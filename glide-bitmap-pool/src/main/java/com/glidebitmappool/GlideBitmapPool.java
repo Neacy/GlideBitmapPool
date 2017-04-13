@@ -22,6 +22,7 @@ import android.os.Build;
 
 import com.glidebitmappool.internal.BitmapPool;
 import com.glidebitmappool.internal.BitmapPoolAdapter;
+import com.glidebitmappool.internal.ByteConstant;
 import com.glidebitmappool.internal.LruBitmapPool;
 
 import java.util.Set;
@@ -31,7 +32,7 @@ import java.util.Set;
  */
 public class GlideBitmapPool {
 
-    private static final int DEFAULT_MAX_SIZE = 6 * 1024 * 1024;
+    private static final int DEFAULT_MAX_SIZE = 6 * ByteConstant.MB;
     private BitmapPool bitmapPool;
     private static GlideBitmapPool sInstance;
 
